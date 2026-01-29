@@ -16,7 +16,7 @@ import {
 // import Discount from "../modules/category/Discount";
 import TopReviewed from "../modules/category/TopReviewed";
 import HomepagePopup from "./HomepagePopup";
-import WhyChooseDressen from "./WhyChooseDressen";
+import WhyChooseNS eMart from "./WhyChooseNS eMart";
 import { useState } from "react";
 
 export default function ClientHome() {
@@ -118,8 +118,8 @@ export default function ClientHome() {
         </div>
       </section>
 
-      {/* WHY CHOOSE DRESSEN */}
-      <WhyChooseDressen />
+      {/* WHY CHOOSE NS eMart */}
+      <WhyChooseNS eMart />
 
       <MobileBottomNav />
     </main>

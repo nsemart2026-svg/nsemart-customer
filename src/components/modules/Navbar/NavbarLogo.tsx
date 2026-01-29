@@ -15,13 +15,13 @@ const NavbarLogo = () => {
         {settings?.logo ? (
           <Image
             src={settings.logo}
-            alt="Dressen Logo"
+            alt="NS eMart Logo"
             width={120}
             height={40}
             className="h-8 w-auto"
           />
         ) : (
-          <span className="text-xl font-bold">Dressen</span>
+          <span className="text-xl font-bold">NS eMart</span>
         )}
       </Link>
     </div>

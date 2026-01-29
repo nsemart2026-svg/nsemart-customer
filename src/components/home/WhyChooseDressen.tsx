@@ -3,7 +3,7 @@
 import { Package, Truck, Palette, RotateCcw } from "lucide-react";
 import Link from "next/link";
 
-export default function WhyChooseDressen() {
+export default function WhyChooseNS eMart() {
   const features = [
     {
       icon: <Package className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />,
@@ -35,7 +35,7 @@ export default function WhyChooseDressen() {
       <div className="bg-primary py-8 md:py-12">
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <h2 className="text-white text-2xl md:text-3xl font-bold mb-8">
-            Why Choose Dressen?
+            Why Choose NS eMart?
           </h2>
           
           <div className="grid grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 px-2 sm:px-4 md:px-8">

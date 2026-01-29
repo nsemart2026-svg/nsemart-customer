@@ -57,7 +57,7 @@ export default function AuthForm({ type }: AuthFormProps) {
       <Link href={"/"}>
         <div className="flex justify-center">
           {/* <Image src="/logo.png" alt="logo" width={100} height={100} /> */}
-          <h1 className="text-primary lg:text-3xl font-bold text-xl">Dressen</h1>
+          <h1 className="text-primary lg:text-3xl font-bold text-xl">NS eMart</h1>
         </div>
       </Link>
       <h2 className="my-6 capitalize text-center text-foreground">{type} to dashboard</h2>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Size Chart - Dressen",
+  title: "Size Chart - NS eMart",
   description: "Clothing size chart for Bangladesh market",
 };
 

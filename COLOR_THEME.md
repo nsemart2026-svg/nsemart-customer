@@ -1,4 +1,4 @@
-# 🎨 Dressen Color Palette Implementation (v2 – Based on #FACF35)
+# 🎨 NS eMart Color Palette Implementation (v2 – Based on #FACF35)
 
 ## Color Palette Overview
 

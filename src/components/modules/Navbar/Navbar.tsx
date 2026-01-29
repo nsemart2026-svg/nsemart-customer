@@ -327,7 +327,7 @@ export default function Navbar() {
                 {settings?.logo ? (
                   <Image
                     src={settings.logo}
-                    alt="Dressen Logo"
+                    alt="NS eMart Logo"
                     width={120}
                     height={40}
                     className="h-10"
@@ -335,7 +335,7 @@ export default function Navbar() {
                   />
                 ) : (
                   <span className="font-extrabold text-3xl text-primary">
-                    Dressen
+                    NS eMart
                   </span>
                 )}
               </Link>
@@ -410,13 +410,13 @@ export default function Navbar() {
                   {/* {settings?.logo ? (
                     <Image
                       src={settings.logo}
-                      alt="Dressen Logo"
+                      alt="NS eMart Logo"
                       width={80}
                       height={32}
                       className="h-8 w-auto"
                     />
                   ) : ( */}
-                  <span className="font-bold text-xl text-accent">Dressen</span>
+                  <span className="font-bold text-xl text-accent">NS eMart</span>
                   {/* )} */}
                 </Link>
               </div>

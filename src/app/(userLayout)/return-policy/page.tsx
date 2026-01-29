@@ -18,7 +18,7 @@ export default function ReturnPolicyPage() {
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-3 md:mb-3">
               Return & Exchange Policy
             </h1>
-            <p className="text-primary text-base md:text-base">We want you to have the best experience with Dressen.</p>
+            <p className="text-primary text-base md:text-base">We want you to have the best experience with NS eMart.</p>
             <p className="text-primary text-base md:text-base">If something is not right, we are here to help.</p>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function ReturnPolicyPage() {
             </div>
             <p className="text-primary mb-3 text-sm md:text-sm">To start a return, please contact us:</p>
             <ul className="space-y-2 text-primary text-sm md:text-sm">
-              <li>• Facebook Page: <a href={settings?.contactAndSocial?.facebookUrl?.[0] || "https://facebook.com/dressen"} target="_blank" rel="noopener noreferrer" className="text-highlight hover:text-primary hover:underline font-semibold">Dressen</a></li>
+              <li>• Facebook Page: <a href={settings?.contactAndSocial?.facebookUrl?.[0] || "https://facebook.com/NS eMart"} target="_blank" rel="noopener noreferrer" className="text-highlight hover:text-primary hover:underline font-semibold">NS eMart</a></li>
               <li>• Customer Support: <a href={`https://wa.me/88${settings?.contactAndSocial?.phone || '01909008004'}`} target="_blank" rel="noopener noreferrer" className="text-highlight hover:text-primary hover:underline font-semibold">{settings?.contactAndSocial?.phone || '01909008004'} (WhatsApp)</a></li>
             </ul>
             <p className="text-primary mt-3 text-sm md:text-sm">Provide your order number, full name, and reason for return.</p>

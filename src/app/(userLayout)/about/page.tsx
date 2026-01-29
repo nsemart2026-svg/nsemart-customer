@@ -17,9 +17,9 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "About — Dressen",
+  title: "About — NS eMart",
   description:
-    "Learn about Dressen — your premier fashion destination offering trendy, quality clothing for every style and occasion.",
+    "Learn about NS eMart — your premier fashion destination offering trendy, quality clothing for every style and occasion.",
 };
 
 function Stat({
@@ -79,13 +79,13 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <p className="text-xs tracking-widest text-primary font-semibold">
-                ABOUT Dressen
+                ABOUT NS eMart
               </p>
               <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-primary">
                 Fashion that fits your lifestyle.
               </h1>
               <p className="mt-3 text-gray-600 max-w-2xl">
-                Dressen brings you the latest in fashion trends and timeless classics. From casual everyday wear to elegant formal pieces—discover quality clothing that expresses your unique style.
+                NS eMart brings you the latest in fashion trends and timeless classics. From casual everyday wear to elegant formal pieces—discover quality clothing that expresses your unique style.
               </p>
 
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
@@ -103,7 +103,7 @@ export default function AboutPage() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-gray-200 bg-white">
               <Image
                 src="/about1.jpg"
-                alt="Fashion collection from Dressen"
+                alt="Fashion collection from NS eMart"
                 fill
                 className="object-contain"
                 sizes="(max-width: 1024px) 100vw, 600px"
@@ -148,14 +148,14 @@ export default function AboutPage() {
               Our Story
             </h2>
             <p className="mt-3 text-gray-600">
-              Dressen started with a simple belief:{" "}
+              NS eMart started with a simple belief:{" "}
               <span className="font-semibold text-primary">
                 &ldquo;Fashion should be accessible, stylish, and sustainable.&rdquo;
               </span>{" "}
               From our first boutique to today&rsquo;s online platform, we&rsquo;ve been committed to curating quality clothing that empowers people to express their individuality.
             </p>
             <p className="mt-3 text-gray-600">
-              Today, Dressen offers everything from casual everyday essentials to statement pieces for special occasions. We carefully select each item for quality, style, and value, bringing you fashion that fits your lifestyle and budget.
+              Today, NS eMart offers everything from casual everyday essentials to statement pieces for special occasions. We carefully select each item for quality, style, and value, bringing you fashion that fits your lifestyle and budget.
             </p>
           </div>
 
@@ -163,7 +163,7 @@ export default function AboutPage() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-gray-200 bg-white">
               <Image
                 src="/about2.jpg"
-                alt="Dressen fashion collection and styling"
+                alt="NS eMart fashion collection and styling"
                 fill
                 className="object-contain"
                 sizes="(max-width: 1024px) 100vw, 600px"

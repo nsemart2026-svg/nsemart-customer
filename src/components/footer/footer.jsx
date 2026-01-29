@@ -19,7 +19,7 @@ export default function Footer() {
   const { data: settings } = useGetSettingsQuery();
   // const sellerHref = isLoggedIn ? "/sr" : "/auth/login";
 
-  const sellerHref = "https://dressen-admin-panel-gamma.vercel.app/auth/login";
+  const sellerHref = "https://NS eMart-admin-panel-gamma.vercel.app/auth/login";
 
   return (
     <footer className="bg-gray-50 py-12 px-6">
@@ -31,13 +31,13 @@ export default function Footer() {
               {settings?.logo ? (
                 <Image
                   src={settings.logo}
-                  alt="Dressen Logo"
+                  alt="NS eMart Logo"
                   width={120}
                   height={40}
                   className="h-10 w-auto mb-1"
                 />
               ) : (
-                <h2 className="text-2xl font-bold text-primary mb-1">Dressen</h2>
+                <h2 className="text-2xl font-bold text-primary mb-1">NS eMart</h2>
               )}
               <p className="text-sm text-gray-600 mb-6">
                 Connect with our social media platforms
@@ -50,7 +50,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col gap-2">
                   {settings?.contactAndSocial?.facebookUrl?.map((url, index) => {
-                    const labels = ['Dressen Facebook Page', 'Dressen Facebook Page', 'Dressen Facebook Page'];
+                    const labels = ['NS eMart Facebook Page', 'NS eMart Facebook Page', 'NS eMart Facebook Page'];
                     return (
                       <a
                         key={index}
@@ -82,7 +82,7 @@ export default function Footer() {
                           <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                         </svg>
                       </div>
-                      Dressen YouTube Channel
+                      NS eMart YouTube Channel
                     </a>
                   )}
                 </div>
@@ -143,13 +143,13 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
                 <a
-                  href={`mailto:${settings?.contactAndSocial?.email || 'dressenbd@gmail.com'}`}
+                  href={`mailto:${settings?.contactAndSocial?.email || 'NS eMartbd@gmail.com'}`}
                   className="hover:text-black transition-colors flex items-center gap-2"
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                   </svg>
-                  {settings?.contactAndSocial?.email || 'dressenbd@gmail.com'}
+                  {settings?.contactAndSocial?.email || 'NS eMartbd@gmail.com'}
                 </a>
               </li>
               <li>
@@ -211,12 +211,12 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://dressen-admin-panel-gamma.vercel.app/auth/login"
+                  href="https://NS eMart-admin-panel-gamma.vercel.app/auth/login"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-black transition-colors"
                 >
-                  Dressen Admin
+                  NS eMart Admin
                 </a>
               </li>
               
@@ -246,7 +246,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-12  pt-8 border-t border-gray-200 text-center">
           <p className="text-sm text-gray-500 mb-4 ">
-            © {new Date().getFullYear()} Dressen Ltd. All rights reserved - Design &amp; Developed by <span className="text-md">WebQ Team</span> 
+            © {new Date().getFullYear()} NS eMart Ltd. All rights reserved - Design &amp; Developed by <span className="text-md">WebQ Team</span> 
           </p>
         </div>
       </div>

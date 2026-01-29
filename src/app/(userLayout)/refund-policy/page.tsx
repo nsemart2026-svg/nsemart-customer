@@ -33,7 +33,7 @@ export default function RefundPolicyPage() {
             <section>
               <h2 className="text-xl font-semibold text-primary mb-4">Refund Process</h2>
               <ol className="list-decimal list-inside text-gray-600 space-y-2">
-                <li>Contact our customer service at Dressenmanager@gmail.com</li>
+                <li>Contact our customer service at NS eMartmanager@gmail.com</li>
                 <li>Provide order number and reason for return</li>
                 <li>Receive return authorization and shipping instructions</li>
                 <li>Ship items back using provided instructions</li>
@@ -45,7 +45,7 @@ export default function RefundPolicyPage() {
               <h2 className="text-xl font-semibold text-primary mb-4">Contact Information</h2>
               <div className="bg-neutral/30 p-4 rounded-lg">
                 <p className="text-gray-600">
-                  <strong>Email:</strong> Dressenmanager@gmail.com<br/>
+                  <strong>Email:</strong> NS eMartmanager@gmail.com<br/>
                   <strong>Phone:</strong> +8801909008004<br/>
                   
                 </p>

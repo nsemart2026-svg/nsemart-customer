@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
               <FileText className="w-6 h-6 md:w-7 md:h-7 text-primary flex-shrink-0 mt-0.5" />
               <h2 className="text-lg md:text-xl font-bold text-primary leading-tight">1. General</h2>
             </div>
-            <p className="text-primary mb-2 text-sm md:text-sm">Dressen reserves the right to update, modify, or change any part of these terms at any time.</p>
+            <p className="text-primary mb-2 text-sm md:text-sm">NS eMart reserves the right to update, modify, or change any part of these terms at any time.</p>
             <p className="text-primary text-sm md:text-sm">Continued use of the website after any change constitutes acceptance of the updated terms.</p>
           </div>
 
@@ -92,7 +92,7 @@ export default function PrivacyPolicyPage() {
             <ul className="space-y-2 text-primary text-sm md:text-sm">
               <li>• Orders may be cancelled before packaging or dispatch.</li>
               <li>• Once the order is shipped, cancellation is not possible.</li>
-              <li>• Dressen reserves the right to cancel any order due to stock issues, payment problems, or suspected fraud.</li>
+              <li>• NS eMart reserves the right to cancel any order due to stock issues, payment problems, or suspected fraud.</li>
             </ul>
           </div>
 
@@ -102,7 +102,7 @@ export default function PrivacyPolicyPage() {
               <Copyright className="w-6 h-6 md:w-7 md:h-7 text-highlight flex-shrink-0 mt-0.5" />
               <h2 className="text-lg md:text-xl font-bold text-primary leading-tight">7. Intellectual Property</h2>
             </div>
-            <p className="text-primary mb-2 text-sm md:text-sm">All text, images, graphics, logos, and content on this website are the property of Dressen.</p>
+            <p className="text-primary mb-2 text-sm md:text-sm">All text, images, graphics, logos, and content on this website are the property of NS eMart.</p>
             <p className="text-primary text-sm md:text-sm">Unauthorized use, reproduction, or distribution is prohibited.</p>
           </div>
 
@@ -136,7 +136,7 @@ export default function PrivacyPolicyPage() {
               <ShieldAlert className="w-6 h-6 md:w-7 md:h-7 text-destructive flex-shrink-0 mt-0.5" />
               <h2 className="text-lg md:text-xl font-bold text-primary leading-tight">10. Limitation of Liability</h2>
             </div>
-            <p className="text-primary mb-2 text-sm md:text-sm">Dressen is not responsible for any direct or indirect losses caused by misuse of our website or products.</p>
+            <p className="text-primary mb-2 text-sm md:text-sm">NS eMart is not responsible for any direct or indirect losses caused by misuse of our website or products.</p>
             <p className="text-primary text-sm md:text-sm">We are not liable for delays caused by courier services, strikes, weather issues, or unforeseen events.</p>
           </div>
         </div>
