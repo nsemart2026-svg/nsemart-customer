@@ -156,7 +156,7 @@ export default function Footer() {
                 <a
                   href={(() => {
                     const whatsappLink = settings?.contactAndSocial?.whatsappLink?.[0];
-                    const phone = settings?.contactAndSocial?.phone || '+88019090008004';
+                    const phone = settings?.contactAndSocial?.phone || '+8801714302080';
                     
                     // If whatsappLink exists and is a proper URL, use it
                     if (whatsappLink && (whatsappLink.startsWith('https://wa.me/') || whatsappLink.startsWith('https://api.whatsapp.com/'))) {
@@ -187,7 +187,7 @@ export default function Footer() {
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                   </svg>
                   <span className="text-gray-500">
-                    {settings?.contactAndSocial?.address || 'Kazla, Dhaka, Bangladesh'}
+                    {settings?.contactAndSocial?.address || 'Polton, Dhaka, Bangladesh'}
                   </span>
                 </div>
               </li>
@@ -211,7 +211,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://NS eMart-admin-panel-gamma.vercel.app/auth/login"
+                  href="https://admin.nsemart.com/auth/login"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-black transition-colors"
@@ -246,7 +246,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-12  pt-8 border-t border-gray-200 text-center">
           <p className="text-sm text-gray-500 mb-4 ">
-            © {new Date().getFullYear()} NS eMart Ltd. All rights reserved - Design &amp; Developed by <span className="text-md">WebQ Team</span> 
+            © {new Date().getFullYear()} NS eMart. All rights reserved - Design &amp; Developed by <span className="text-md">WebQ Team</span> 
           </p>
         </div>
       </div>

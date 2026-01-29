@@ -89,7 +89,7 @@ export default function ContactUs() {
                       <a 
                         href={(() => {
                           const whatsappLink = contactInfo?.whatsappLink?.[0];
-                          const phone = contactInfo?.phone || '+88019090008004';
+                          const phone = contactInfo?.phone || '+8801714302080';
                           
                           // If whatsappLink exists and is a proper URL, use it
                           if (whatsappLink && (whatsappLink.startsWith('https://wa.me/') || whatsappLink.startsWith('https://api.whatsapp.com/'))) {
