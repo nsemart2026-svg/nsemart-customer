@@ -22,39 +22,40 @@ type SliderImage = {
 };
 
 const FALLBACK: Slide[] = [
-  { 
-    _id: "f1", 
+  {
+    _id: "f1",
     imageUrl: "/about1.jpg",
-    alt: "NS eMart Banner", 
-    href: "/products/footwear" 
+    alt: "NS eMart Banner",
+    href: "/products/footwear",
   },
 ];
-
 
 export default function BannerSlider() {
   // Fetch settings from backend
   const { data: settings, isLoading, isError, error } = useGetSettingsQuery();
 
-  
-  const [failedApiImages, setFailedApiImages] = useState<Set<string>>(new Set());
-  
+  const [failedApiImages, setFailedApiImages] = useState<Set<string>>(
+    new Set(),
+  );
+
   // Show API images if available, otherwise fallback
   const slides: Slide[] = useMemo(() => {
     const sliderImages = settings?.sliderImages;
-    
+
     if (sliderImages && sliderImages.length > 0) {
       return sliderImages
         .filter((item: SliderImage) => {
           return item.image && !failedApiImages.has(item.image);
         })
         .map((item: SliderImage, index: number) => {
-          const clickUrl = item.url && item.url.trim() !== '' ? item.url : undefined;
-          
+          const clickUrl =
+            item.url && item.url.trim() !== "" ? item.url : undefined;
+
           return {
             _id: `slide-${index}`,
             imageUrl: item.image,
             alt: `Banner ${index + 1}`,
-            href: clickUrl
+            href: clickUrl,
           };
         });
     }
@@ -63,10 +64,11 @@ export default function BannerSlider() {
 
   const [idx, setIdx] = useState(0);
   const [paused, setPaused] = useState(false);
-  const [animationState, setAnimationState] = useState<"in" | "out" | null>(null);
+  const [animationState, setAnimationState] = useState<"in" | "out" | null>(
+    null,
+  );
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const [prefersReducedMotion, setPRM] = useState(false);
-
 
   // Handle prefers-reduced-motion
   useEffect(() => {
@@ -158,7 +160,9 @@ export default function BannerSlider() {
         }
       `}</style>
 
-      {isLoading && <div className="absolute inset-0 animate-pulse bg-neutral" />}
+      {isLoading && (
+        <div className="absolute inset-0 animate-pulse bg-neutral" />
+      )}
 
       {slides.map((s, i) => {
         const isActive = i === idx;
@@ -167,47 +171,55 @@ export default function BannerSlider() {
             ? animationState === "in"
               ? "slide-in"
               : animationState === "out"
-              ? "slide-out"
-              : ""
+                ? "slide-out"
+                : ""
             : isActive
-            ? "opacity-100"
-            : "opacity-0";
+              ? "opacity-100"
+              : "opacity-0";
 
         // Skip rendering if imageUrl is invalid
-        if (!s.imageUrl || typeof s.imageUrl !== 'string' || s.imageUrl === '"' || s.imageUrl.includes('"')) {
+        if (
+          !s.imageUrl ||
+          typeof s.imageUrl !== "string" ||
+          s.imageUrl === '"' ||
+          s.imageUrl.includes('"')
+        ) {
           return null;
         }
 
         return (
-          <div key={s._id} className={`absolute inset-0 ${!isActive ? 'pointer-events-none' : ''}`}>
+          <div
+            key={s._id}
+            className={`absolute inset-0 ${!isActive ? "pointer-events-none" : ""}`}
+          >
             <Image
               src={s.imageUrl}
               alt={s.alt || "Banner"}
               fill
               priority={i === 0}
-              className={`object-cover transition-opacity duration-500 ${animationClass} ${s.href && isActive ? 'cursor-pointer' : ''}`}
+              className={`object-cover transition-opacity duration-500 ${animationClass} ${s.href && isActive ? "cursor-pointer" : ""}`}
               sizes="(min-width:1280px) 1000px, 100vw"
               unoptimized
               onError={() => {
                 if (settings?.sliderImages) {
-                  setFailedApiImages(prev => new Set(prev).add(s.imageUrl));
+                  setFailedApiImages((prev) => new Set(prev).add(s.imageUrl));
                 }
               }}
               onClick={() => {
                 if (isActive && s.href) {
-                  window.open(s.href, '_blank', 'noopener,noreferrer');
+                  window.open(s.href, "_blank", "noopener,noreferrer");
                 }
               }}
             />
             {isActive && (
               <div className="absolute inset-0 flex items-center justify-start pl-4 sm:pl-8 md:pl-12 lg:pl-16 bg-black/40">
                 <div>
-                  <h2 className="text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl drop-shadow-2xl leading-tight">
+                  {/* <h2 className="text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl drop-shadow-2xl leading-tight">
                     বাংলার<br />স্ট্রিট কালচার
                   </h2>
                   <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-2 drop-shadow-lg font-light">
                     Unleash Your Inner Street Style
-                  </p>
+                  </p> */}
                 </div>
               </div>
             )}

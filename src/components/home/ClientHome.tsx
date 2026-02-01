@@ -16,8 +16,8 @@ import {
 // import Discount from "../modules/category/Discount";
 import TopReviewed from "../modules/category/TopReviewed";
 import HomepagePopup from "./HomepagePopup";
-import WhyChooseNS eMart from "./WhyChooseNS eMart";
 import { useState } from "react";
+import WhyChooseNSeMart from "./WhyChooseDressen";
 
 export default function ClientHome() {
   const [selectedPromoCategoryId, setSelectedPromoCategoryId] = useState<string | null>(null);
@@ -119,7 +119,7 @@ export default function ClientHome() {
       </section>
 
       {/* WHY CHOOSE NS eMart */}
-      <WhyChooseNS eMart />
+      <WhyChooseNSeMart />
 
       <MobileBottomNav />
     </main>

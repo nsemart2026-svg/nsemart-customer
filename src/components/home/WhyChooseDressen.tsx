@@ -3,7 +3,7 @@
 import { Package, Truck, Palette, RotateCcw } from "lucide-react";
 import Link from "next/link";
 
-export default function WhyChooseNS eMart() {
+export default function WhyChooseNSeMart() {
   const features = [
     {
       icon: <Package className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />,
